@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+
+ <form id="contact" action="insert.php" method="POST" >
+    <h3>Registration Form</h3>
+    <h4>Contact us</h4>
+  <table>
+   <tr>
+ 
+    <td>Name :</td>
+    <td><input type="text" name="username" required></td>
+
+   </tr>
+   <tr>
+
+    <td>Password :</td>
+    <td><input  type="password" name="password" required></td>
+	
+   </tr>
+   <tr>
+   
+    <td>Gender :</td>
+    <td>
+     <input type="radio" name="gender" value="m" required> Male 
+     <input type="radio" name="gender" value="f" required> Female
+    </td>
+	
+   </tr>
+   <tr>
+  
+    <td>Email :</td>
+    <td><input  type="email" name="email" required></td>
+	
+   </tr> 
+   <tr>
+  
+    <td>Phone no :</td>
+    <td>
+     <select name="phoneCode" required>
+      <option selected hidden value="">Select Code</option>
+      <option value="977">977</option>
+      <option value="978">978</option>
+      <option value="979">979</option>
+      <option value="973">973</option>
+      <option value="972">972</option>
+      <option value="974">974</option>
+     </select>
+     <input  type="phone" name="phone" required>
+    </td>
+
+   </tr>
+   <tr>
+    <td><input  type="submit" value="Submit"></td>
+   </tr>
+  </table>
+   
+<button class="button" onclick="location.href='show.php'" type="button">
+     SHOW LIST</button>
+ </form>
+<style type="text/css">
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  width: 400px;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  margin:0 auto;
+  background: #4CAF50;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="password"],
+#contact input[type="phone"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="password"],
+#contact input[type="phone"],
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+
+
+
+
+
+
+
+  </style>
+</html>
